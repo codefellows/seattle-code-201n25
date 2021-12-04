@@ -55,6 +55,13 @@ In the lower left-hand corner of VSCode, click on the gear icon and select "Sett
 - "editor.detectIndentation" should be set to true
 - "editor.wordWrap" should be set to "on"
 
-## Today's Outline
+## Today's Notes
 
-<!-- To Be Completed By Instructor -->
+- get input
+- create output
+
+That's what computers do.
+
+It is helpful to use a validator. Such as this one from W3 schools: [html validator](https://validator.w3.org/#validate_by_input)
+
+Submit assignment as a Gist

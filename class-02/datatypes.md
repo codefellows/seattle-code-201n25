@@ -1,4 +1,4 @@
-#Data types
+# Data types
 
 - string
 - boolean
@@ -12,7 +12,7 @@
   - ex: Do you have a dog? Yes/No
   - ex: How old is your dog? number
 
-# Primatives
+## Primatives
 
 - the building blocks or larger or more complex dsata types or structures
 - The more basic form of data

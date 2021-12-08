@@ -1,0 +1,20 @@
+body {
+  background-color: pink;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+ul {
+  margin-left: 1rem;
+  list-style: disc;
+  padding-left: 1rem;
+}
+
+ol {
+  list-style-position: inside;
+  list-style: decimal;
+  padding: 1rem;
+  margin-left: 1rem;
+}

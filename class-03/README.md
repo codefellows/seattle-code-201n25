@@ -6,6 +6,10 @@
 
 ### Repls & Code Pen
 
+-[Class 02 Review](https://replit.com/@rkgallaway/201-class-02-review#index.js)
+-[Arrays and Loops Repl](https://replit.com/@rkgallaway/201n25-class-03-arrays-and-loops)
+-[CSS Box Model](https://codepen.io/rkgallaway/pen/xxXEvPB)
+
 ### Students will be able to
 
 #### Describe and Define

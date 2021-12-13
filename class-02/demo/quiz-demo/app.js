@@ -35,4 +35,3 @@ if (doILikeStrawberries === 'yes' || doILikeStrawberries === 'y') {
 } else {
   console.log('please answer with a yes or a no');
 }
-

@@ -1,0 +1,81 @@
+
+div, span {
+  border: 1px solid gray;
+}
+h1 {
+  font-size: 2rem;
+}
+
+.car {
+  border: 2px solid red;
+}
+
+div.car {
+  border-color: green;
+}
+
+div > span {
+  background-color: pink;
+}
+
+div span {
+  background-color: orange;
+}
+
+
+section + span {
+  background-color: green;
+}
+
+section ~ span {
+  background-color: magenta;
+}
+
+
+/*
+  + — is the Adjacent sibling selector
+    It selects an element that is directly after a particular selector.
+
+  ~ — is the General silbing selector
+    It selects all elements that are siblings of a particular selector.  
+*/
+
+li:first-child {
+  color: blue;
+  font-weight: bold;
+}
+
+li:nth-child(2) {
+  color: purple;
+  font-weight: bold;
+}
+
+span:first-of-type {
+  color: white;
+}
+
+span:nth-of-type(2) {
+  color: yellow;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li:nth-child(3):hover {
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+
+ul::after {
+  content: 'ul::after';
+  color: red;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+ul::before {
+  content: 'ul::before';
+}

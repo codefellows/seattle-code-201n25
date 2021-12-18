@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem
+}
+
+h2 {
+  font-weight: bold;
+}
+
+/* Red box: */
+section {
+  border: 15px solid red;
+  /* border-width: 15px;
+  border-color: red;
+  border-style: solid; */
+  /* border: solid; */
+  /* Two values:  top/bottom, right/left */
+  /* border-width: 5px 100px; */
+  /* border: 1px red; */
+  /*    clockwise from the top */
+  /*   Top, Right, Bottom, Left  */
+  margin: 5rem auto 0 auto;
+  width: 80%;
+  position: static;
+  height: 40rem;
+}
+
+div {
+  border: medium solid black;
+  margin: 1rem;
+  padding: 1rem;
+  /* float: right; */
+  width: max-content;
+  /* display: inline-block; */
+}
+
+div#one {
+  left: 100px;
+  width: 20%;
+  position: relative;
+  background-color: linen;
+}
+div#two {
+  right: 0;
+  top: 4rem;
+  width: 50%;
+  position: absolute;
+  background-color: lavender;
+}
+
+div#three {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+  background-color: beige;
+}
+
+/* .clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+} */

@@ -1,7 +1,5 @@
 # HTML Links, JS Functions, and Intro to CSS Layout
 
-<!-- Description Here -->
-
 ## Learning Objectives
 
 ### Students will be able to
@@ -19,8 +17,6 @@
 - Successfully pair program with a fellow student and manage the collaborative and version control aspects of working with Git (from the command line) and GitHub (in the browser).
 
 ## Today's Outline
-
-<!-- To Be Completed By Instructor -->
 
 ## Notes
 

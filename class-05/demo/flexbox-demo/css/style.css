@@ -1,0 +1,28 @@
+.container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container div {
+  background-color: lightgray;
+  margin: .5rem;
+  border: 1px solid black;
+  flex-basis: 20%;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+div:nth-child(odd) {
+  flex-shrink: 0;
+  flex-grow: 20;
+}
+
+div:nth-child(even) {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+

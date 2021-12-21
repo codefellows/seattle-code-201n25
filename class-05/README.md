@@ -30,6 +30,12 @@ It's time to take a look at branching in Git. We'll also go over the commands an
 - absolute
 - fixed
 
+### CSS Flexbox
+
+- [Flexbox Cheatsheet](https://jonitrythall.com/content/flexboxsheet.pdf)
+- [Flexbox Froggy](https://flexboxfroggy.com/)
+
+
 ## Code demo for today's lab
 
 Today's lab is a 'one-off' lab, in that it is not directly connected to your weekly project.

@@ -21,10 +21,11 @@
 ### Google Fonts
 
 - Go to [Google Fonts website](https://fonts.google.com/)
-- search for fonts
-- use the "+" to add them
-- copy the `<link>` html code provided and add it to the header of your html page, before you import your style.css file.
-- use the CSS property to add the font family to your styes. Ex.: `font-family: 'Monoton', cursive;`
+- Search for fonts
+- Use the "+" to add them
+- Copy the `<link>` html code provided and add it to the header of your html page, before you import your style.css file.
+- Use the CSS property to add the font family to your styes. Ex.: `font-family: 'Monoton', cursive;`
+- [Font types](https://www.picmonkey.com/blog/font-pairing-like-a-pro)
 
 ### Tables
 

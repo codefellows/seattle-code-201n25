@@ -12,7 +12,7 @@ let seattle = {
   averageCookiesSoldEachHourArray: [],
   getRandomCustomers: function() {
     //The maximum is inclusive and the minimum is inclusive 
-    return Math.floor(Math.random() * (this.max - this.min + 1) + this.min); 
+    return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
   },
   calcCookiesPerHour: function() {
     // Do this 14 times, one for each hour in our hours array — For loop?

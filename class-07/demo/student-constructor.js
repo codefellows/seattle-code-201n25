@@ -25,7 +25,7 @@
 let studentArray = [];
 
 // Declare constructor function
-// 
+//
 function Student(name, pronouns, codeClass) {
   this.StudentName = name;
   this.pronouns = pronouns;
@@ -35,7 +35,7 @@ function Student(name, pronouns, codeClass) {
     console.log(`Hi, my name is ${this.StudentName}. My pronouns are ${this.pronouns} and I am in the ${this.codeClass} class.`);
   };
   studentArray.push(this);
-};
+}
 
 // create "instances" of student:
 // This is called "instanciating"
@@ -54,7 +54,7 @@ let sara = new Student('Sara', 'she, her', 201);
 // for (let i = 0; i < studentArray.length; i++) {
 //   studentArray[i].introduce();
 // }
-// 
+//
 Student.prototype.hairColor = 'black';
 console.log(sara.hairColor);
 console.log(juan.hairColor);

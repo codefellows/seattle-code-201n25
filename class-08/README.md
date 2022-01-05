@@ -22,3 +22,5 @@
 <!-- To Be Completed By Instructor -->
 
 ## Notes
+
+- [Style tiles](http://styletil.es/)

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Forms</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Events with forms</h1>
+  </header>
+  <main>
+    <form id="form">
+      <label for="firstName">First name</label>
+      <input id="firstName" type="text" placeholder="first name" name="nameFirst">
+
+      <label>Last name
+        <input type="text" placeholder="last name" name="nameLast">
+      </label>
+
+      <label>Number of Pets
+        <input type="number" name="NumberOfPets">
+      </label>
+
+      <fieldset>
+        <legend>Did you have a pet as a Child</legend>
+        <label>Yes
+          <input type="radio" value="Yes" name="childhoodPet">
+        </label>
+        <label>No
+          <input type="radio" value="No" name="childhoodPet">
+        </label>
+      </fieldset>
+
+      <fieldset>
+
+      <legend>What type of pets have you had if any?</legend>
+      <label>Dog
+        <input type="checkbox" name="hadADog" value="dog">
+      </label>
+      <label>Cat
+        <input type="checkbox" name="hadACat" value="cat">
+      </label>
+      <label>Fish
+        <input type="checkbox" name="hadAFish" value="fish">
+      </label>
+      <label>Hamster
+        <input type="checkbox" name="hadAHamster" value="hamster">
+      </label>
+    </fieldset>
+    <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

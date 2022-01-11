@@ -12,7 +12,7 @@ function functionName() {
 element.addEventListener('typeOfEvent', functionName);
 
 
-// Callback functions
+// Callback functions:
 // Functions passed as arguments into other functions
 
 // from Modzilla:

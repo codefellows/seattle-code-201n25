@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Adopt a Kitten</title>
+  <link href="css/reset.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Adopt a Kitten</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Kittens Available for Adoption:</h2>
+      <div id="kittenProfiles">
+
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>1st favorite</th>
+            <th>2nd favorite</th>
+            <th>3rd favorite</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Foot</td>
+            <td>Foot</td>
+            <td>Foot</td>
+            <td>Foot</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <aside>
+      <form>
+        <fieldset>
+          <legend>Add a Kitten</legend>
+        
+        <!-- name, about, likes, img
+       -->
+        <label for="kittenName">Kitten's name</label>
+        <input type="text" name="name" id="kittenName" required>
+
+        <label>Number of months old
+          <input type="number" name="ageInMonths">
+        </label>
+
+        <label>About the Kitten
+          <input type="text" name="about">
+        </label>
+
+        <label>Photo of Kitten
+          <input type="url" name="imageURL">
+        </label>
+
+        <label>Kitten's favorite thing
+          <input type="text" name="fav1">
+        </label>
+        <label>Kitten's 2nd favorite thing
+          <input type="text" name="fav2">
+        </label>
+        <label>Kitten's 3rd favorite thing
+          <input type="text" name="fav3">
+        </label>
+      </fieldset>
+      <button type="submit">Add kitten</button>
+      </form>
+    </aside>
+  </main>
+  <footer>
+  </footer>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

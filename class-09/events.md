@@ -33,7 +33,7 @@ Code is TRIGGERED
 (see js file in class folder)
 
 **Event bubbling (what we will use)**
-: Using event bubbling we can put the event listener on just the container and it will listen to click events in its children elements. We call this bubbling because when an event happens on one of these child “inner” elements, that event will ‘bubble’ outward. With bubbling, the event is first handled by the innermost element and then propagated to outer elements.
+: Using event bubbling we can put the event listener on just the container and it will listen to click events in its children elements. We call this bubbling because when an event happens on one of these child ‘inner’ elements, that event will ‘bubble’ outward. With bubbling, the event is first handled by the innermost element and then propagated to outer elements.
 
 **Event capturing (rarely used)**
 : The opposite: With capturing, the event is first captured by the outermost element and propagated to the inner elements.

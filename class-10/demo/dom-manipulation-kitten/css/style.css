@@ -118,3 +118,11 @@ textarea,
 input {
   margin-bottom: 1rem;
 }
+
+.fa-twitter-square {
+  font-size: 3rem;
+}
+
+.fa-twitter-square:hover {
+  color: purple;
+}

@@ -1,7 +1,7 @@
 'use strict';
 
 const profileContainer = document.getElementById('kittenProfiles');
-const kittenTable = document.querySelector('table tbody');
+const kittenTable = document.querySelector('tbody');
 
 const kittenForm = document.querySelector('form');
 
@@ -57,7 +57,7 @@ Kitten.prototype.renderList = function () {
     let message = `${this.name} likes ${this.like[i]}`;
     createNewElement('li', message, kittenLikes);
   }
-  console.log(kittenLikes.innerHTML);
+  // console.log(kittenLikes.innerHTML);
   kittenLikes.innerHTML = '';
 };
 

@@ -5,6 +5,7 @@
 let goatArray = [];
 let counter = 0;
 let counterMaxValue = 15;
+let indexArray = [];
 
 const myContainer = document.querySelector('section');
 const myButton = document.querySelector('section + div');
@@ -22,20 +23,24 @@ function Goat(name, fileExtension = 'jpg') {
   goatArray.push(this);
 }
 
-
 function selectRandomGoat() {
   return Math.floor(Math.random() * goatArray.length);
 }
 
 function renderGoats() {
-  let goat1 = selectRandomGoat();
-  let goat2 = selectRandomGoat();
   // maybe use an array here??????
   // how do you know if an array includes something????????
   // Google it
-  while (goat1 === goat2) {
-    goat2 = selectRandomGoat();
+  while (indexArray.length < 4) {
+    let randomNumber = selectRandomGoat();
+    if (!indexArray.includes(randomNumber)) {
+      indexArray.push(randomNumber);
+    }
   }
+  console.log(indexArray);
+
+  let goat1 = indexArray.shift();
+  let goat2 = indexArray.shift();
 
   image1.src = goatArray[goat1].src;
   image1.alt = goatArray[goat1].name;
@@ -64,26 +69,61 @@ function handleClick(event) {
   if (counter === counterMaxValue) {
     // stop the game
     myContainer.removeEventListener('click', handleClick);
-    myButton.className = 'clicks-allowed';
-    myButton.addEventListener('click', handleButtonClick);
-  }
-  renderGoats();
-}
-
-function handleButtonClick() {
-  if (counter === counterMaxValue) {
-    renderResults();
+    renderChart();
+  } else {
+    renderGoats();
   }
 }
 
-function renderResults() {
-  let ul = document.querySelector('ul');
+function renderChart() {
+  let goatNames = [];
+  let goatLikes = [];
+  let goatViews = [];
   for (let i = 0; i < goatArray.length; i++) {
-    let message = `${goatArray[i].name} had ${goatArray[i].views} views amd was clicked on ${goatArray[i].likes} times`;
-    let li = document.createElement('li');
-    li. textContent = message;
-    ul.appendChild(li);
+    // get the name, likes, views for each goat
+    goatNames.push(goatArray[i].name);
+    goatLikes.push(goatArray[i].likes);
+    goatViews.push(goatArray[i].views);
   }
+  console.log(goatNames);
+  const data = {
+    labels: goatNames,
+    datasets: [{
+      label: '# of Views',
+      data: goatViews,
+      backgroundColor: [
+        'rgba(255, 159, 64, 0.2)'
+      ],
+      borderColor: [
+        'rgb(255, 159, 64)',
+      ],
+      borderWidth: 1
+    },
+    {
+      label: '# of like/clicks',
+      data: goatLikes,
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+      ],
+      borderColor: [
+        'rgb(255, 99, 132)',
+      ],
+      borderWidth: 1
+    }]
+  };
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    },
+  };
+  const chart = document.getElementById('myCanvas');
+  const myChart = new Chart(chart, config);
 }
 
 // code that runs on page load:
@@ -95,6 +135,7 @@ new Goat('kissing-goat');
 new Goat('sassy-goat');
 new Goat('smiling-goat');
 new Goat('sweater-goat');
+console.log(goatArray);
 
 renderGoats();
 

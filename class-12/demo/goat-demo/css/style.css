@@ -16,6 +16,21 @@ h1 {
   grid-column-start: 2;
   grid-column-end: 3;
 }
+nav, ul  {
+  display: flex;
+  align-items: baseline;
+}
+nav ul li {
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+}
+nav a {
+  color: rosybrown;
+  text-decoration: none;
+}
+main > a {
+  z-index: 2;
+}
 
 main {
   width: 1024px;
@@ -27,12 +42,12 @@ main {
 
 #siteLogo {
   width: 250px;
-  z-index: 2;
+  z-index: 5;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-section {
+main > section {
   /* This element will be a grid item, but also a flex container */
   background-color: rgba(211, 187, 176, 0.3);
   padding: 2rem;
@@ -61,3 +76,21 @@ section + div {
   padding: 2rem;
 }
 
+section > article {
+  margin-top: 5rem;
+}
+
+article h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+  line-height: 120%;
+}
+
+article section {
+  overflow: auto;
+  height: 17rem;
+}

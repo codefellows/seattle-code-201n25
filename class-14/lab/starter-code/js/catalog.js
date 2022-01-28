@@ -46,12 +46,17 @@ function addSelectedItemToCart() {
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
-function updateCounter() {}
+function updateCounter() {
+  document.getElementById('itemCount').textContent = cart.items.length;
+}
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
   // TODO: Get the item and quantity from the form
+  // same as above
   // TODO: Add a new element to the cartContents div with that information
+  // window into the DOM
+  // create an element, give it content, append it to itss parent (parent is our window into the DOM)
 }
 
 // Set up the "submit" event listener on the form.

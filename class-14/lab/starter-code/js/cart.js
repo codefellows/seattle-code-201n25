@@ -5,6 +5,7 @@
 const table = document.getElementById('cart');
 table.addEventListener('click', removeItemFromCart);
 let cart;
+let tbodyElement = document.querySelector('tbody');
 
 function loadCart() {
   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
@@ -19,6 +20,8 @@ function renderCart() {
 }
 
 // TODO: Remove all of the rows (tr) in the cart table (tbody)
+// (pretend that tbodyElement is my DOM element)
+// tbodyElement.innerHTML = '';
 function clearCart() {}
 
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
